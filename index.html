@@ -1,6 +1,11 @@
 <style>
-  #editor { font-family: "Helvetica Neue", sans-serif; font-size:12pt;color:black;}
-  #editor { border: solid 1px #CCC; padding: 1em; border-radius: 0.5em; margin-bottom: 2em;}
+  html, body { height: 100%; font-family: "Helvetica Neue", sans-serif; }
+  #editor { min-height: 100%; }
+  #editor { font-family: "Helvetica Neue", sans-serif; font-size:12pt; color:black; }
+  #editor { padding: 2em; box-sizing: border-box; }
+  #tools { position: absolute; top: 1em; right: 1em; }
+  #disclaimer { position: absolute; top: 0; font-size: 10pt; color: #666; }
+  #attribution { margin: 1em; font-size: 10pt; color: #666; }
 
 		.h1 { font-size: 150%; font-weight: bold; }
 		.h2 { font-size: 125%; font-weight: bold; }
@@ -33,7 +38,7 @@
 		</div>
 	</header>
 
-<p>Thank you for checking out Calca! This web version is experimental with many features not working. It will only stay up during April 1, 2014. If you like Calca, please <a href="http://calca.io">purchase it</a>!</p>
+<p id="disclaimer">Thank you for checking out Calca! This web version is experimental with many features not working. If you like Calca, please <a href="http://calca.io">purchase it</a>!</p>
 
 	<div id="editor" contenteditable="true" spellcheck="false" style="white-space: pre-wrap; outline: 0px solid transparent;"># Introduction
 
@@ -221,7 +226,7 @@ Lines that begin with a `#` are interpreted as headings. The number of hash sign
 You now know enough to make good use of Calca, and there are many more features to discover!</div>
 
 
-<p>This web version is powered by <a href="http://github.com/praeclarum/Netjs">Netjs</a> - the .NET to JavaScript compiler.</p>
+<p id="attribution">This web version is powered by <a href="http://github.com/praeclarum/Netjs">Netjs</a> - the .NET to JavaScript compiler.</p>
 
 	<script>
 
