@@ -3,7 +3,7 @@
   #editor { min-height: 100%; }
   #editor { font-family: "Helvetica Neue", sans-serif; font-size:12pt; color:black; }
   #editor { padding: 2em; box-sizing: border-box; }
-  #tools { position: absolute; top: 1em; right: 1em; }
+  #tools { position: fixed; top: 1em; right: 1em; }
   #disclaimer { position: absolute; top: 0; left: 1em; right: 1em; font-size: 10pt; color: #666; text-align: center; }
   #attribution { margin: -2em 1em 0; font-size: 10pt; color: #666; }
 
@@ -34,7 +34,7 @@
 
 <header>
 		<div id="tools">
-			<a id="editButton" href="#" onclick="doit()">Done</a>
+			<a id="editButton" href="javascript:void(0)" onclick="doit()">Done</a>
 		</div>
 	</header>
 
